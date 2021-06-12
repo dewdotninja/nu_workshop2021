@@ -18,6 +18,20 @@
   <li />สัญญาณ WiFi เพื่อเชื่อมต่ออินเทอร์เน็ต (ESP32 ต้องใช้ระบบ 2.4 GHz ที่ไม่มีระบบความปลอดภัยแบบกรอกรหัสผ่านบนเบราเซอร์)
 </ul>
 
+### ซอฟต์แวร์
+
+ลิงก์รายละเอียดหรือวีดีโอการติดตั้งสำหรับบางตัวอยู่ด้านล่างของหัวข้อย่อยที่เกี่ยวข้อง
+
+<ul>
+  <li />Arduino IDE (ควรเป็นเวอร์ชันตั้งแต่ 1.8.10 ขึ้นไป) ที่ติดตั้ง ESP32 Arduino core 
+  <li />Jupyter notebook (ใช้ colab ได้) ติดตั้ง <a href="https://python-control.readthedocs.io/en/0.9.0/">Python control library 0.9.0</a>
+  <li /><a href="https://auth.netpie.io/login">NETPIE 2020 account</a>
+  <li /><a href="https://chrome.google.com/webstore/detail/mqttbox/kaajoficamnjijhkeomgfljpicifbkaf">MQTT box </a>(สำหรับเรียนรู้การสื่อสารกับ NETPIE2020 เป็น extension ของ Chrome
+  <li /><a href="">Thonny Python IDE</a>
+  
+</ul>
+<hr>
+
 ### เสาร์ 10 AM - 12 PM
 
 ### 1. พื้นฐานการโปรแกรม ESP32 โดยภาษา C และ Arduino IDE
