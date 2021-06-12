@@ -1,8 +1,8 @@
 ## nu_workshop2021 : อุปกรณ์ไอโอทีสำหรับงานควบคุมอุตสาหกรรม
 
-<img src="https://drive.google.com/uc?id=1yJ1gZ2oaUsyW-zs64wQVya2UxY_ycD4K" width=600 />
+<img src="https://drive.google.com/uc?id=1yJ1gZ2oaUsyW-zs64wQVya2UxY_ycD4K" width=700 />
 
-<img align=left src="https://i.imgur.com/CzEUVpd.jpg" width=300 /> 
+<img align=left src="https://i.imgur.com/CzEUVpd.jpg" width=250 /> 
 
 <p />หน้า github repo นี้ใช้สำหรับการฝึกอบรมเชิงปฏิบัติการออนไลน์ "อุปกรณ์ไอโอทีสำหรับงานควบคุมอุตสาหกรรม" ภาควิชาฟิสิกส์ คณะวิทยาศาสตร์ ม.นเรศวร มิถุนายน 2564
 
@@ -25,8 +25,6 @@
   <li />การจำลองพลวัตระบบเชิงเส้นบน ESP32 
   <li />การควบคุมแบบลูปเปิด (open-loop control)
   <li />การควบคุมป้อนกลับแบบสัดส่วน (proportional control)
-  <li />
-  
 </ol>
 
 
@@ -34,6 +32,11 @@
 
 ### 2. การพัฒนา micropython บน ESP32
 
+#### หัวข้อย่อย
+
+<ol>
+  <li />
+</ol>
 
 
 ### อาทิตย์ 10 AM - 12 PM
