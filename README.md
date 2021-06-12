@@ -1,6 +1,6 @@
 ## nu_workshop2021 : อุปกรณ์ไอโอทีสำหรับงานควบคุมอุตสาหกรรม
 
-<img align=center src="https://drive.google.com/uc?id=1yJ1gZ2oaUsyW-zs64wQVya2UxY_ycD4K" width=700 />
+<img align=center src="https://drive.google.com/uc?id=1yJ1gZ2oaUsyW-zs64wQVya2UxY_ycD4K" width=800 />
 
 <img align=left src="https://i.imgur.com/CzEUVpd.jpg" width=250 /> 
 
@@ -27,7 +27,9 @@
   <li />Jupyter notebook (ใช้ colab ได้) ติดตั้ง <a href="https://python-control.readthedocs.io/en/0.9.0/">Python control library 0.9.0</a>
   <li /><a href="https://auth.netpie.io/login">NETPIE 2020 account</a>
   <li /><a href="https://chrome.google.com/webstore/detail/mqttbox/kaajoficamnjijhkeomgfljpicifbkaf">MQTT box </a>(สำหรับเรียนรู้การสื่อสารกับ NETPIE2020 เป็น extension ของ Chrome
-  <li /><a href="">Thonny Python IDE</a>
+  <li /><a href="https://thonny.org/">Thonny Python IDE</a>
+  <li /><a href="https://micropython.org/download/esp32/">ESP32 micropython firmware</a> สำหรับ Thonny
+  <li /><a href="https://nodejs.org/en/">Node.js</a> สำหรับ node-red
   
 </ul>
 <hr>
