@@ -88,6 +88,19 @@
 
 ### 4. การพัฒนาบน node-red
 
+<ol>
+  <li />การสร้าง flow พื้นฐาน
+  <li />การเชื่อมต่อกับ NETPIE2020 broker
+  <li />การส่งข้อมูลออก MQTT out node
+  <li />การรับข้อมูลเข้าจาก MQTT in node
+  <li />การใช้ split และ switch nodes เพื่อเลือกข้อความส่วนที่ต้องการ
+  <li />การใช้ node-red dashboard nodes เพื่อแสดงผล (gauge, text)
+  <li />dashboard nodes สำหรับควบคุม (slider, text input, switch)
+  <li />การแก้ปัญหาวนลูปสำหรับ node ควบคุม
+  <li />การ import/export flow
+  
+</ol>
+
 
 
 
