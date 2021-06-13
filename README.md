@@ -4,7 +4,7 @@
 
 <img align=left src="https://i.imgur.com/CzEUVpd.jpg" width=250 /> 
 
-<p />หน้า github repo นี้ใช้สำหรับการฝึกอบรมเชิงปฏิบัติการออนไลน์ "อุปกรณ์ไอโอทีสำหรับงานควบคุมอุตสาหกรรม" ภาควิชาฟิสิกส์ คณะวิทยาศาสตร์ ม.นเรศวร มิถุนายน 2564 ในการอบรมจะใช้บอร์ด NodeMCU-32S ร่วมกับบอร์ดเสริม LAG3-ESP32 ที่ใช้วงจรอิเล็กทรอนิกส์จำลองพลวัตของถังน้ำ 3 ระดับ โดยบอร์ดจะส่งมอบให้ผู้ฝึกอบรมล่วงหน้า อย่างไรก็ตามหากไม่มีบอร์ดเสริมนี้ก็สามารถร่วมฝึกอบรมได้โดยใช้โมดูล ESP32 ที่มีอยู่ โดยตั้งค่าตัวแปรในโปรแกรมเพื่อจำลองการทำงานของระบบถังน้ำได้ 
+<p />หน้า github repo นี้ใช้สำหรับการฝึกอบรมเชิงปฏิบัติการออนไลน์ "อุปกรณ์ไอโอทีสำหรับงานควบคุมอุตสาหกรรม" ภาควิชาฟิสิกส์ คณะวิทยาศาสตร์ ม.นเรศวร 26-27 มิถุนายน 2564 ในการอบรมจะใช้บอร์ด NodeMCU-32S ร่วมกับบอร์ดเสริม LAG3-ESP32 ที่ใช้วงจรอิเล็กทรอนิกส์จำลองพลวัตของถังน้ำ 3 ระดับ โดยบอร์ดจะส่งมอบให้ผู้ฝึกอบรมล่วงหน้า อย่างไรก็ตามหากไม่มีบอร์ดเสริมนี้ก็สามารถร่วมฝึกอบรมได้โดยใช้โมดูล ESP32 ที่มีอยู่ โดยตั้งค่าตัวแปรในโปรแกรมเพื่อจำลองการทำงานของระบบถังน้ำได้ 
 
 <p />เนื้อหาการอบรมจะเน้นการสร้างตัวควบคุม PID บนฮาร์ดแวร์ ESP32 โดยใช้ภาษา C และ micropython เมื่อเข้าใจหลักการแล้วสามารถพัฒนาเป็นอุปกรณ์ไอโอทีเพื่อควบคุมหรือปรับแต่งจากระยะไกลผ่านอินเทอร์เน็ต 
 
@@ -28,12 +28,32 @@
   <li /><a href="https://thonny.org/">Thonny Python IDE</a>
   <li /><a href="https://micropython.org/download/esp32/">ESP32 micropython firmware</a> สำหรับ Thonny
   <li /><a href="https://nodejs.org/en/">Node.js</a> สำหรับ node-red
+</ul>
+
+### สไลด์การติดตั้ง
+<ul>
+  <li /><a href="https://drive.google.com/file/d/1BjW-U1dIBDPtFgPzsjiHsPa43TUacYiZ/view?usp=sharing">IoT & NETPIE2020 Workshop Preparation</a>
+</ul>
+
+### วีดีโอการติดตั้ง
+
+หมายเหตุ : บางคลิปเป็นภาษาอังกฤษเนื่่องจากต้องใช้สอนในโปรแกรมนานาชาติด้วย
+<ul>
+  <li /><a href="https://drive.google.com/file/d/1MxZMu_hacfBijNOM_8S-UzH6eEGunv7B/view?usp=sharing" target=_blank>Arduino IDE, ESP core and library installation</a>
+  <li /><a href="https://youtu.be/M_PfTcezMCQ">การติดตั้ง Thonny และ micropython สำหรับ ESP32</a>
+  <li />
+  <ul>การติดตั้ง Node.js และ node-red คำสั่งที่ใช้หลังติดตั้ง Node.js แล้วคือ <em>npm install -g --unsafe-perm node-red</em>
+    <li /><a href="https://drive.google.com/file/d/1OX5AOevkYBqFZ5s0nCbKQOGhQ9DW1wbh/view?usp=sharing">Windows</a> 
+    <li /><a href="https://drive.google.com/file/d/1CuiaRJSod4BVu5zrKILiKZGT0pwLqJCs/view?usp=sharing">Mac-OSX</a>
+  </ul>  
+  
   
 </ul>
 
+
 <hr>
 
-### เสาร์ 10 AM - 12 PM
+### เสาร์ 26 มิย. 64 : 10 AM - 12 PM
 
 ### 1. พื้นฐานการโปรแกรม ESP32 โดยภาษา C และ Arduino IDE
 
@@ -54,7 +74,18 @@
   <li />อยู่ระหว่างดำเนินการ
 </ul>
 
-### เสาร์ 1 - 4 PM
+#### วีดีโอเสริม
+<ul>
+  <li /><a href="">clip 1</a>
+</ul>
+
+#### ลิงก์
+<ul>
+  <li /><a href="https://www.arduino.cc/">Arduino website</a>
+</ul>
+  
+
+### เสาร์ 26 มิย. 64 : 1 - 4 PM
 
 ### 2. การพัฒนา micropython บน ESP32
 
@@ -77,10 +108,19 @@
   <li />อยู่ระหว่างดำเนินการ
 </ul>
 
+#### วีดีโอเสริม
+<ul>
+  <li /><a href="https://github.com/dewdotninja/micropython">หน้า github micropython</a>
+</ul>
 
+#### ลิงก์
+<ul>
+  <li /><a href="https://micropython.org/">Micropython website</a>
+  <li /><a href="https://github.com/mcauser/awesome-micropython">Awesome micropython github</a>
+</ul>
 <hr>
 
-### อาทิตย์ 10 AM - 12 PM
+### อาทิตย์ 27 มิย. 64 : 10 AM - 12 PM
 
 ### 3. การอิมพลิเมนต์ตัวควบคุม PID เพื่อใช้งานเป็น IIoT (Industrial Internet of Things)
 
@@ -100,8 +140,18 @@
   <li />อยู่ระหว่างดำเนินการ
 </ul>
 
+#### วีดีโอเสริม
+<ul>
+  <li /><a href="">clip 1</a>
+</ul>
 
-### อาทิตย์ 1 - 4 PM
+
+#### ลิงก์
+<ul>
+  <li /><a href="">link</a>
+</ul>
+
+### อาทิตย์ 27 มิย. 64 : 1 - 4 PM
 
 ### 4. การพัฒนาบน node-red
 
@@ -124,7 +174,16 @@
   <li />อยู่ระหว่างดำเนินการ
 </ul>
 
+#### วีดีโอเสริม
+<ul>
+  <li /><a href="">clip 1</a>
+</ul>
 
+
+#### ลิงก์
+<ul>
+  <li /><a href="">link</a>
+</ul>
 
 
 
