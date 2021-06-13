@@ -84,7 +84,7 @@
   <li /><a href="https://www.arduino.cc/">Arduino website</a>
 </ul>
   
-
+<hr>
 ### เสาร์ 26 มิย. 64 : 1 - 4 PM
 
 ### 2. การพัฒนา micropython บน ESP32
@@ -151,6 +151,7 @@
   <li /><a href="">link</a>
 </ul>
 
+<hr>
 ### อาทิตย์ 27 มิย. 64 : 1 - 4 PM
 
 ### 4. การพัฒนาบน node-red
