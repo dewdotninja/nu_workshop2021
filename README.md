@@ -27,7 +27,7 @@
   <li /><a href="https://chrome.google.com/webstore/detail/mqttbox/kaajoficamnjijhkeomgfljpicifbkaf">MQTT box </a>(สำหรับเรียนรู้การสื่อสารกับ NETPIE2020 เป็น extension ของ Chrome)
   <li /><a href="https://thonny.org/">Thonny Python IDE</a>
   <li /><a href="https://micropython.org/download/esp32/">ESP32 micropython firmware</a> สำหรับ Thonny
-  <li /><a href="https://nodejs.org/en/">Node.js</a> สำหรับ node-red
+  <li /><a href="https://nodejs.org/en/">Node.js</a> สำหรับ <a href="https://nodered.org/">node-red</a>
 </ul>
 
 ### สไลด์การติดตั้ง
@@ -64,7 +64,6 @@
   <li />การใช้งาน Arduino IDE + ESP32 core
   <li />การใช้ไลบรารีและคำสั่งภาษา C ขั้นพื้นฐานเพื่อใช้งานขาและโมดูลต่างๆ ของ ESP32 เช่น ADC, PWM, DAC, external interrupt, timer
   <li />การเชื่อมต่อกับ NETPIE 2020 
-  <li />การจำลองพลวัตระบบเชิงเส้นบน ESP32 
   <li />การกำหนดคาบเวลา
   <li />การควบคุมแบบลูปเปิด (open-loop control)
   <li />การควบคุมป้อนกลับแบบสัดส่วน (proportional control)
@@ -77,7 +76,8 @@
 
 #### วีดีโอเสริม
 <ul>
-  <li /><a href="">clip 1</a>
+  <li /><a href="https://drive.google.com/file/d/1BzIFrVIK4RGhaQvJWaaWSw-3LpqTPXF7">แนะนำ NETPIE 2020</a>
+  <li /><a href="https://drive.google.com/file/d/1vJSXw1Y7TZHl65KD0zdtvWUFAJh5kAIS">NETPIE workshops จากคอร์ส 01211421 (ใช้บอร์ด ESP8266) </a>
 </ul>
 
 #### ลิงก์
@@ -95,6 +95,7 @@
 <ol>
   <li />การใช้งาน Thonny สำหรับพัฒนา micropython บน ESP32
   <li />การเขียนโปรแกรม Python เพื่อใช้งานขาและโมดูลของ ESP32 
+  <li />การจำลองพลวัตระบบเชิงเส้นบน ESP32 
   <li />การเชื่อมต่อกับ NETPIE 2020 โดยแพ็คเกจ umqtt
   <li />การเขียนข้อมูลบน shadow และแสดงผลข้อมูลบน Freeboard
   <li />การส่งคำสั่งจาก NETPIE 2020
@@ -145,7 +146,8 @@
 
 #### วีดีโอเสริม
 <ul>
-  <li /><a href="">clip 1</a>
+  <li /><a href="https://youtu.be/ag3m1jUp6A4">ตัวควบคุม PID บน ESP32 และ NETPIE 2020</a>
+  <li /><a href="https://youtu.be/dP4ARTuyy1c">ทดลองสร้างตัวควบคุม IoT สำหรับหุ่นยนต์ 2 ก้านต่อ</a>
 </ul>
 
 
@@ -181,13 +183,16 @@
 
 #### วีดีโอเสริม
 <ul>
-  <li /><a href="">clip 1</a>
+  <li /><a href="https://youtu.be/opuQ2LKkSds">ใช้งาน node-red ร่วมกับ NETPIE 2020 (ภาค 1)</a>
+  <li /><a href="https://youtu.be/XuBZombtvt0">ใช้งาน node-red ร่วมกับ NETPIE 2020 (ภาค 2)</a>
+  <li /><a href="https://youtu.be/gT1QCi2lYvE"> แก้ปัญหาลูปไม่เสถียรเมื่อใช้ node-red ควบคุมอุปกรณ์ IoT</a>
 </ul>
 
 
 #### ลิงก์
 <ul>
-  <li /><a href="">link</a>
+  <li /><a href="https://nodejs.org/en/">Node.js</a>
+  <li /><a href="https://nodered.org/">Node-RED</a>
 </ul>
 
 
