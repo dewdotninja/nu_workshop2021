@@ -83,6 +83,7 @@
 #### ลิงก์
 <ul>
   <li /><a href="https://www.arduino.cc/">Arduino website</a>
+  <li /><a href="https://github.com/dewdotninja/embedded_iot">Materials for embedded/IoT courses for International Undergrad Program at Kasetsart University</a>
 </ul>
   
 <hr>
@@ -148,12 +149,15 @@
 <ul>
   <li /><a href="https://youtu.be/ag3m1jUp6A4">ตัวควบคุม PID บน ESP32 และ NETPIE 2020</a>
   <li /><a href="https://youtu.be/dP4ARTuyy1c">ทดลองสร้างตัวควบคุม IoT สำหรับหุ่นยนต์ 2 ก้านต่อ</a>
+  <li /><a href="https://drive.google.com/file/d/1z4h7EP-Pp2tXfrCy1DGdIzZKZs4k_7BW/view">การแปลงตัวควบคุมเป็นดีสครีต (part 1) </a>
+  <li /><a href="https://drive.google.com/file/d/17Zb4u_qb0EHE4Gezh9-VvqAU7V_COQb3/view">การแปลงตัวควบคุมเป็นดีสครีต (part 2)</a>
+  <li /><a href="https://drive.google.com/file/d/14QzLiJLTme4fHvJRoTroIJMKoMe9qQqU/view>การอิมพลิเมนต์ตัวควบคุม PID</a>
 </ul>
 
 
 #### ลิงก์
 <ul>
-  <li /><a href="">link</a>
+  <li /><a href="https://github.com/dewdotninja/control_python">หน้า github control_python</a>
 </ul>
 
 <hr>
