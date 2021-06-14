@@ -74,7 +74,8 @@
 
 #### สไลด์
 <ul>
-  <li />อยู่ระหว่างดำเนินการ
+  <li /><a href="/S1/s1_ESP32_basics.pdf">ESP32 basics</a>
+  <li /><a href="/S1/s1_ESP32_basics.pdf">LAG3-ESP32 board</a>
 </ul>
 
 #### วีดีโอเสริม
