@@ -88,6 +88,7 @@
   <li /><a href="https://drive.google.com/file/d/1BzIFrVIK4RGhaQvJWaaWSw-3LpqTPXF7">แนะนำ NETPIE 2020</a>
   <li /><a href="https://drive.google.com/file/d/1vJSXw1Y7TZHl65KD0zdtvWUFAJh5kAIS">NETPIE workshops จากคอร์ส 01211421 (ใช้บอร์ด ESP8266) </a>
   <li /><a href="https://drive.google.com/file/d/1KkXoj_4e8zDlCXYe1obSyk-BrHT04FfP/view">แนะนำการใช้ Jupyter notebook เบื้องต้นเพื่อเขียนโค้ด Python </a> 
+  <li /><a hef="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/EYriPSJQGt1LimaAFeMRF7MBROtv8mcY3qPme82CmVsDbA?e=1UShFP">อธิบายบอร์ด lag3 ที่ใช้ในการฝึกอบรม</a>
 </ul>
 
 #### ลิงก์
