@@ -40,7 +40,7 @@
 
 ### วีดีโอการติดตั้ง
 
-หมายเหตุ : บางคลิปเป็นภาษาอังกฤษเนื่่องจากต้องใช้สอนในโปรแกรมนานาชาติด้วย
+หมายเหตุ : บางคลิปเป็นภาษาอังกฤษเนื่องจากต้องใช้สอนในโปรแกรมนานาชาติด้วย
 <ul>
   <li /><a href="https://drive.google.com/file/d/1MxZMu_hacfBijNOM_8S-UzH6eEGunv7B/view?usp=sharing" target=_blank>Arduino IDE, ESP core and library installation</a>
   <li /><a href="https://youtu.be/M_PfTcezMCQ">การติดตั้ง Thonny และ micropython สำหรับ ESP32</a>
@@ -75,8 +75,13 @@
 #### สไลด์
 <ul>
   <li /><a href="/S1/s1_ESP32_basics.pdf">ESP32 basics</a>
-  <li /><a href="/S1/s1_ESP32_basics.pdf">LAG3-ESP32 board</a>
+  <li /><a href="/S1/s1_lag3.pdf">LAG3-ESP32 board</a>
 </ul>
+
+#### โปรแกรม
+<ul>
+  <li />โปรแกรมสำหรับ Arduino IDE อยู่ในไดเรคทอรี่ย่อย /S1/labs 
+  <Li />ไฟล์สำหรับ Jupyter notebook ในไดเรคทอรีย่อย /S1/jupyter_nb
 
 #### วีดีโอเสริม
 <ul>
