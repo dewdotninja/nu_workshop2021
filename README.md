@@ -112,6 +112,7 @@
 #### วีดีโอเสริม
 <ul>
   <li /><a href="https://github.com/dewdotninja/micropython">หน้า github micropython</a>
+  <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/EY2zvF6KzzxNheKw338CfzsBh3mFD3Lwb-rl9_ljnhcUZw?e=PuIdhW">การจำลอง 3rd order lag plant โดย micropython บน ESP32</a>
 </ul>
 
 #### ลิงก์
