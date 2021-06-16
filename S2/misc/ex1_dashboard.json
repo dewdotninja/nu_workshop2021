@@ -1,0 +1,101 @@
+{
+ "version": "application/octet-stream",
+ "allow_edit": true,
+ "plugins": [],
+ "panes": [
+  {
+   "title": "toggle control",
+   "width": 1,
+   "row": {
+    "3": 1
+   },
+   "col": {
+    "3": 2
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Toggle",
+     "settings": {
+      "caption": "Toggle",
+      "state": "datasources[\"datasource1\"][\"msg\"][\"update\"].split(\",\")[1]==1",
+      "ontext": "ON",
+      "offtext": "OFF",
+      "onaction": "netpie[\"datasource1\"].publish(\"@msg/cmd\",\"toggle=1\")",
+      "offaction": "netpie[\"datasource1\"].publish(\"@msg/cmd\",\"toggle=0\")"
+     }
+    }
+   ]
+  },
+  {
+   "title": "Toggle period",
+   "width": 1,
+   "row": {
+    "3": 1
+   },
+   "col": {
+    "3": 3
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "",
+      "color": "red",
+      "showvalue": 1,
+      "min": "0",
+      "max": "1",
+      "step": "0.05",
+      "initialvalue": "0.5",
+      "autovaluesource": "datasources[\"datasource1\"][\"msg\"][\"update\"].split(\",\")[2]",
+      "onStop": "netpie[\"datasource1\"].publish(\"@msg/cmd\",\"brightness=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "LED control",
+   "width": 1,
+   "row": {
+    "3": 1
+   },
+   "col": {
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Toggle",
+     "settings": {
+      "caption": "LED",
+      "state": "datasources[\"datasource1\"][\"msg\"][\"update\"].split(\",\")[0]==1",
+      "ontext": "ON",
+      "offtext": "OFF",
+      "onaction": "netpie[\"datasource1\"].publish(\"@msg/cmd\",\"led=1\")",
+      "offaction": "netpie[\"datasource1\"].publish(\"@msg/cmd\",\"led=0\")"
+     }
+    }
+   ]
+  }
+ ],
+ "datasources": [
+  {
+   "name": "datasource1",
+   "type": "netpiex_datasource",
+   "settings": {
+    "name": "datasource1",
+    "deviceid": "YOUR_CLIEND_ID",
+    "devicetoken": "YOUR_TOKEN_",
+    "topics": "@msg/update",
+    "feed": 0,
+    "feed_since_value": "6",
+    "feed_since_unit": "hours",
+    "feed_downsampling": "1",
+    "feed_downsampling_unit": "minutes"
+   }
+  }
+ ],
+ "columns": 3,
+ "theme": "netpie"
+}
