@@ -1,0 +1,218 @@
+{
+ "version": "application/octet-stream",
+ "allow_edit": true,
+ "plugins": [],
+ "panes": [
+  {
+   "title": "plant output",
+   "width": 1,
+   "row": {
+    "3": 1
+   },
+   "col": {
+    "3": 2
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "gauge",
+     "settings": {
+      "title": "y",
+      "value": "datasources[\"lag3ds\"][\"shadow\"][\"y\"]",
+      "units": "Volts",
+      "min_value": 0,
+      "max_value": "3"
+     }
+    }
+   ]
+  },
+  {
+   "title": "controller output",
+   "width": 1,
+   "row": {
+    "3": 1
+   },
+   "col": {
+    "3": 3
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "gauge",
+     "settings": {
+      "title": "u",
+      "value": "datasources[\"lag3ds\"][\"shadow\"][\"u\"]",
+      "units": "Volts",
+      "min_value": 0,
+      "max_value": "3"
+     }
+    }
+   ]
+  },
+  {
+   "title": "ref. cmd.",
+   "width": 1,
+   "row": {
+    "3": 9
+   },
+   "col": {
+    "3": 2
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "r",
+      "color": "green",
+      "showvalue": 1,
+      "min": 0,
+      "max": "3",
+      "step": "0.1",
+      "initialvalue": "1",
+      "autovaluesource": "datasources[\"lag3ds\"][\"shadow\"][\"r\"]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"r=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "plant simulation",
+   "width": 1,
+   "row": {
+    "3": 9
+   },
+   "col": {
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Toggle",
+     "settings": {
+      "caption": "psim",
+      "state": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[1]==1",
+      "ontext": "ON",
+      "offtext": "OFF",
+      "onaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"psim=1\")",
+      "offaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"psim=0\")"
+     }
+    }
+   ]
+  },
+  {
+   "title": "datasize",
+   "width": 1,
+   "row": {
+    "3": 9
+   },
+   "col": {
+    "3": 3
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "points",
+      "color": "blue",
+      "showvalue": 1,
+      "min": "10",
+      "max": "2000",
+      "step": "10",
+      "initialvalue": "200",
+      "autovaluesource": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[2]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"datasize=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "set minimum r",
+   "width": 1,
+   "row": {
+    "3": 5
+   },
+   "col": {
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Button",
+     "settings": {
+      "caption": "set",
+      "text": "r = 0.1",
+      "color": "blue",
+      "onClick": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"r=0.1\")"
+     }
+    }
+   ]
+  },
+  {
+   "title": "step response ",
+   "width": 1,
+   "row": {
+    "3": 1
+   },
+   "col": {
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Button",
+     "settings": {
+      "caption": "step",
+      "text": "r = 1.0",
+      "color": "green",
+      "onClick": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"r\")"
+     }
+    }
+   ]
+  },
+  {
+   "title": "set capture mode",
+   "width": 1,
+   "row": {
+    "3": 13
+   },
+   "col": {
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Toggle",
+     "settings": {
+      "caption": "capture",
+      "state": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[3]==1",
+      "ontext": "ON",
+      "offtext": "OFF",
+      "onaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"capture=1\")",
+      "offaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"capture=0\")"
+     }
+    }
+   ]
+  }
+ ],
+ "datasources": [
+  {
+   "name": "lag3ds",
+   "type": "netpiex_datasource",
+   "settings": {
+    "name": "lag3ds",
+    "deviceid": "YOUR_CLIENT_ID",
+    "devicetoken": "YOUR_TOKEN",
+    "topics": "@msg/update",
+    "feed": 0,
+    "feed_since_value": "6",
+    "feed_since_unit": "hours",
+    "feed_downsampling": "1",
+    "feed_downsampling_unit": "minutes"
+   }
+  }
+ ],
+ "columns": 3,
+ "theme": "default"
+}
