@@ -82,6 +82,7 @@
 <ul>
   <li />โปรแกรมสำหรับ Arduino IDE อยู่ในไดเรคทอรี่ย่อย /S1/labs 
   <Li />ไฟล์สำหรับ Jupyter notebook ในไดเรคทอรีย่อย /S1/jupyter_nb
+</ul>
 
 #### วีดีโอเสริม
 <ul>
@@ -113,20 +114,26 @@
   <li />การเขียนข้อมูลบน shadow และแสดงผลข้อมูลบน Freeboard
   <li />การส่งคำสั่งจาก NETPIE 2020
   <li />การส่งข้อความไปยัง Freeboard โดยตรงเพื่ออัพเดต 
-  <li />การแจ้งเตือนผ่าน Line app
-  <li />การนำค่าจาก shadow มาใช้ตั้งค่าเริ่มต้น
   <li />พัฒนาตัวควบคุมสัดส่วนโดย micropython
 </ul>
 
 #### สไลด์
 <ul>
-  <li />อยู่ระหว่างดำเนินการ
+  <a href="/S2/s2_upython.pdf">การพัฒนา micropython บน ESP32</a>
+</ul>
+
+#### โปรแกรม
+<ul>
+  <li />โปรแกรมสำหรับ micropython อยู่ในไดเรคทอรี่ย่อย /S2/upython_files 
+  <Li />ไฟล์สำหรับ Jupyter notebook ในไดเรคทอรีย่อย /S2/jupyter_nb
+  <li />ไฟล์อื่นที่อาจเป็นประโยชน์ อยู่ในไดเรคทอรีย่อย /S2/misc
 </ul>
 
 #### วีดีโอเสริม
 <ul>
   <li /><a href="https://github.com/dewdotninja/micropython">หน้า github micropython</a>
   <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/EY2zvF6KzzxNheKw338CfzsBh3mFD3Lwb-rl9_ljnhcUZw?e=PuIdhW">การจำลอง 3rd order lag plant โดย micropython บน ESP32</a>
+  <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/EXihyY5wdGRBjIE2TAafCzcBAOE2vNYmbjzqyOU95eGaOw?e=mt20WT">เปรียบเทียบผลตอบสนองระหว่างการจำลองโดยอัลกอริทึมกับวงจรอิเล็กทรอนิกส์บนบอร์ด LAG3 </a>
 </ul>
 
 #### ลิงก์
