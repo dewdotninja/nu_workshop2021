@@ -162,7 +162,8 @@
 
 #### สไลด์
 <ul>
-  <li />อยู่ระหว่างดำเนินการ
+  <li /><a href="/S3/pid_basics.pdf">ตัวควบคุม PID</a>
+  <li /><a href="/S3/chapter8_en.pdf">FreeRTOS basics</a>
 </ul>
 
 #### วีดีโอเสริม
