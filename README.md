@@ -145,6 +145,8 @@
 
 <hr>
 
+<img align=center src="https://drive.google.com/uc?id=1D6v5VW_dcqsULxS2aqstEyx0b3GqWPd2" width=600 />
+
 ### อาทิตย์ 27 มิย. 64 : 10 AM - 12 PM
 
 ### 3. การอิมพลิเมนต์ตัวควบคุม PID เพื่อใช้งานเป็น IIoT (Industrial Internet of Things)
@@ -163,7 +165,16 @@
 #### สไลด์
 <ul>
   <li /><a href="/S3/pid_basics.pdf">ตัวควบคุม PID</a>
+  <li /><a href="/S3/s3_pid_upython.pdf">การพัฒนาตัวควบคุม PID โดย MICROPYTHON บน ESP32</a>
   <li /><a href="/S3/chapter8_en.pdf">FreeRTOS basics</a>
+</ul>
+
+#### โปรแกรม
+<ul>
+  <li />โปรแกรมสำหรับ micropython อยู่ในไดเรคทอรี่ย่อย /S3/upython_files 
+  <Li />ไฟล์สำหรับ Jupyter notebook ในไดเรคทอรีย่อย /S3/jupyter_nb
+  <li />ไฟล์สำหรับหัวข้อ FreeRTOS บน Arduino IDE อยู่ในไดเรคทอรีย่อย /S3/freertos
+  <li />ไฟล์อื่นที่อาจเป็นประโยชน์ อยู่ในไดเรคทอรีย่อย /S3/misc
 </ul>
 
 #### วีดีโอเสริม
@@ -173,6 +184,7 @@
   <li /><a href="https://drive.google.com/file/d/1z4h7EP-Pp2tXfrCy1DGdIzZKZs4k_7BW/view">การแปลงตัวควบคุมเป็นดีสครีต (part 1) </a>
   <li /><a href="https://drive.google.com/file/d/17Zb4u_qb0EHE4Gezh9-VvqAU7V_COQb3/view">การแปลงตัวควบคุมเป็นดีสครีต (part 2)</a>
   <li /><a href="https://drive.google.com/file/d/14QzLiJLTme4fHvJRoTroIJMKoMe9qQqU/view">การอิมพลิเมนต์ตัวควบคุม PID</a>
+  <li /><a href="https://youtu.be/DP8pD9pgssc">สร้างตัวควบคุม PID เป็นไอโอทีบน ESP32 โดย micropython และ NETPIE2020</a>
 </ul>
 
 
