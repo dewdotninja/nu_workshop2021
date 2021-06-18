@@ -1,0 +1,451 @@
+{
+ "version": "application/octet-stream",
+ "allow_edit": true,
+ "plugins": [],
+ "panes": [
+  {
+   "title": "plant output",
+   "width": 1,
+   "row": {
+    "2": 1,
+    "3": 1
+   },
+   "col": {
+    "2": 2,
+    "3": 2
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "gauge",
+     "settings": {
+      "title": "y",
+      "value": "datasources[\"lag3ds\"][\"shadow\"][\"y\"]",
+      "units": "Volts",
+      "min_value": 0,
+      "max_value": "3"
+     }
+    }
+   ]
+  },
+  {
+   "title": "controller output",
+   "width": 1,
+   "row": {
+    "2": 1,
+    "3": 1
+   },
+   "col": {
+    "2": 1,
+    "3": 3
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "gauge",
+     "settings": {
+      "title": "u",
+      "value": "datasources[\"lag3ds\"][\"shadow\"][\"u\"]",
+      "units": "Volts",
+      "min_value": 0,
+      "max_value": "3"
+     }
+    }
+   ]
+  },
+  {
+   "title": "feeback select",
+   "width": 1,
+   "row": {
+    "2": 9,
+    "3": 1
+   },
+   "col": {
+    "2": 1,
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Toggle",
+     "settings": {
+      "caption": "feedback",
+      "state": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[4]==1",
+      "ontext": "ON",
+      "offtext": "OFF",
+      "onaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"feedback=1\")",
+      "offaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"feedback=0\")"
+     }
+    }
+   ]
+  },
+  {
+   "title": "step response ",
+   "width": 1,
+   "row": {
+    "2": 9,
+    "3": 5
+   },
+   "col": {
+    "2": 2,
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Button",
+     "settings": {
+      "caption": "step",
+      "text": "r = 1.0",
+      "color": "green",
+      "onClick": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"r\")"
+     }
+    }
+   ]
+  },
+  {
+   "title": "set minimum r",
+   "width": 1,
+   "row": {
+    "2": 13,
+    "3": 9
+   },
+   "col": {
+    "2": 1,
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Button",
+     "settings": {
+      "caption": "set",
+      "text": "r = 0.1",
+      "color": "blue",
+      "onClick": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"r=0.1\")"
+     }
+    }
+   ]
+  },
+  {
+   "title": "ref. cmd.",
+   "width": 1,
+   "row": {
+    "2": 13,
+    "3": 9
+   },
+   "col": {
+    "2": 2,
+    "3": 2
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "r",
+      "color": "green",
+      "showvalue": 1,
+      "min": 0,
+      "max": "3",
+      "step": "0.1",
+      "initialvalue": "1",
+      "autovaluesource": "datasources[\"lag3ds\"][\"shadow\"][\"r\"]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"r=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "datasize",
+   "width": 1,
+   "row": {
+    "2": 17,
+    "3": 9
+   },
+   "col": {
+    "2": 1,
+    "3": 3
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "points",
+      "color": "blue",
+      "showvalue": 1,
+      "min": "10",
+      "max": "2000",
+      "step": "10",
+      "initialvalue": "200",
+      "autovaluesource": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[2]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"datasize=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "plant simulation",
+   "width": 1,
+   "row": {
+    "2": 17,
+    "3": 13
+   },
+   "col": {
+    "2": 2,
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Toggle",
+     "settings": {
+      "caption": "psim",
+      "state": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[1]==1",
+      "ontext": "ON",
+      "offtext": "OFF",
+      "onaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"psim=1\")",
+      "offaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"psim=0\")"
+     }
+    }
+   ]
+  },
+  {
+   "title": "proportional gain",
+   "width": 1,
+   "row": {
+    "2": 21,
+    "3": 13
+   },
+   "col": {
+    "2": 1,
+    "3": 2
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "Kp",
+      "color": "blue",
+      "showvalue": 1,
+      "min": 0,
+      "max": 100,
+      "step": "0.1",
+      "initialvalue": "5",
+      "autovaluesource": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[5]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"kp=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "set capture mode",
+   "width": 1,
+   "row": {
+    "2": 21,
+    "3": 17
+   },
+   "col": {
+    "2": 2,
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Toggle",
+     "settings": {
+      "caption": "capture",
+      "state": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[3]==1",
+      "ontext": "ON",
+      "offtext": "OFF",
+      "onaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"capture=1\")",
+      "offaction": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"capture=0\")"
+     }
+    }
+   ]
+  },
+  {
+   "title": "integral gain",
+   "width": 1,
+   "row": {
+    "3": 13
+   },
+   "col": {
+    "3": 3
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "ki",
+      "color": "red",
+      "showvalue": 1,
+      "min": 0,
+      "max": 100,
+      "step": "0.1",
+      "initialvalue": "2.74",
+      "autovaluesource": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[6]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"ki=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "derivative gain",
+   "width": 1,
+   "row": {
+    "3": 17
+   },
+   "col": {
+    "3": 2
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "kd",
+      "color": "yellow",
+      "showvalue": 1,
+      "min": 0,
+      "max": 100,
+      "step": "0.1",
+      "initialvalue": "2.1",
+      "autovaluesource": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[7]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"kd=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "back calculation gain",
+   "width": 1,
+   "row": {
+    "3": 17
+   },
+   "col": {
+    "3": 3
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "kt",
+      "color": "white",
+      "showvalue": 1,
+      "min": 0,
+      "max": "10",
+      "step": "0.1",
+      "initialvalue": "0",
+      "autovaluesource": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[8]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"kt=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "proportional weight",
+   "width": 1,
+   "row": {
+    "3": 21
+   },
+   "col": {
+    "3": 1
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "wp",
+      "color": "grey",
+      "showvalue": 1,
+      "min": 0,
+      "max": "10",
+      "step": "0.1",
+      "initialvalue": "1",
+      "autovaluesource": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[9]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"wp=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "derivative weight",
+   "width": 1,
+   "row": {
+    "3": 21
+   },
+   "col": {
+    "3": 2
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "wd",
+      "color": "green",
+      "showvalue": 1,
+      "min": 0,
+      "max": "10",
+      "step": "0.1",
+      "initialvalue": "0",
+      "autovaluesource": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[10]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"wd=\"+String(value))"
+     }
+    }
+   ]
+  },
+  {
+   "title": "d-filter coefficient",
+   "width": 1,
+   "row": {
+    "3": 21
+   },
+   "col": {
+    "3": 3
+   },
+   "col_width": 1,
+   "widgets": [
+    {
+     "type": "Slider",
+     "settings": {
+      "caption": "N",
+      "color": "blue",
+      "showvalue": 1,
+      "min": "2",
+      "max": "200",
+      "step": 1,
+      "initialvalue": "20",
+      "autovaluesource": "datasources[\"lag3ds\"][\"msg\"][\"update\"].split(\",\")[11]",
+      "onStop": "netpie[\"lag3ds\"].publish(\"@msg/cmd\", \"n=\"+String(value))"
+     }
+    }
+   ]
+  }
+ ],
+ "datasources": [
+  {
+   "name": "lag3ds",
+   "type": "netpiex_datasource",
+   "settings": {
+    "name": "lag3ds",
+    "deviceid": "YOUR_CLIENT_ID",
+    "devicetoken": "YOUR_TOKEN",
+    "topics": "@msg/update",
+    "feed": 0,
+    "feed_since_value": "6",
+    "feed_since_unit": "hours",
+    "feed_downsampling": "1",
+    "feed_downsampling_unit": "minutes"
+   }
+  }
+ ],
+ "columns": 3,
+ "theme": "default"
+}
