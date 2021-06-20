@@ -221,6 +221,8 @@
   <li /><a href="https://youtu.be/opuQ2LKkSds">ใช้งาน node-red ร่วมกับ NETPIE 2020 (ภาค 1)</a>
   <li /><a href="https://youtu.be/XuBZombtvt0">ใช้งาน node-red ร่วมกับ NETPIE 2020 (ภาค 2)</a>
   <li /><a href="https://youtu.be/gT1QCi2lYvE"> แก้ปัญหาลูปไม่เสถียรเมื่อใช้ node-red ควบคุมอุปกรณ์ IoT</a>
+  <li />ตัวควบคุม PID บน ESP32 โดย micropython แสดงผลและควบคุมโดย NETPIE2020 + node-red (part 1) (อัพโหลดในวันสัมมนา)
+  <li />ตัวควบคุม PID บน ESP32 โดย micropython แสดงผลและควบคุมโดย NETPIE2020 + node-red (part 2) (อัพโหลดในวันสัมมนา)
 </ul>
 
 
