@@ -21,7 +21,7 @@
 ### ซอฟต์แวร์
 
 <ul>
-  <li />Arduino IDE (ควรเป็นเวอร์ชันตั้งแต่ 1.8.10 ขึ้นไป) ที่ติดตั้ง ESP32 Arduino core 
+  <li />Arduino IDE (ควรเป็นเวอร์ชันตั้งแต่ 1.8.10 ขึ้นไป) ที่ติดตั้ง ESP32 Arduino core โดยใส่ URL https://dl.espressif.com/dl/package_esp32_index.json ลงในช่อง Additional Boards Manager URLs ของเมนู Preferences
   <li />Jupyter notebook (ใช้ colab ได้) ติดตั้ง <a href="https://python-control.readthedocs.io/en/0.9.0/">Python control library 0.9.0</a>
   <li /><a href="https://auth.netpie.io/login">NETPIE 2020 account</a>
   <li /><a href="https://chrome.google.com/webstore/detail/mqttbox/kaajoficamnjijhkeomgfljpicifbkaf">MQTT box </a>(สำหรับเรียนรู้การสื่อสารกับ NETPIE2020 เป็น extension ของ Chrome)
