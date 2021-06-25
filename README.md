@@ -47,7 +47,9 @@
 
 หมายเหตุ : บางคลิปเป็นภาษาอังกฤษเนื่องจากต้องใช้สอนในโปรแกรมนานาชาติด้วย
 <ul>
+  
   <li /><a href="https://drive.google.com/file/d/1MxZMu_hacfBijNOM_8S-UzH6eEGunv7B/view?usp=sharing" target=_blank>Arduino IDE, ESP core and library installation</a>
+  <li /><a href="https://www.youtube.com/watch?v=nnhDAz9Jw0Y&t=574s">EP 1 | การติดตั้งโปรแกรมสำหรับอบรม NETPIE 2020 (วีดีโอจากทีมงาน NETPIE) </a>
   <li /><a href="https://youtu.be/M_PfTcezMCQ">การติดตั้ง Thonny และ micropython สำหรับ ESP32</a>
   <li />
   <ul>การติดตั้ง Node.js และ node-red คำสั่งที่ใช้หลังติดตั้ง Node.js แล้วคือ <em>npm install -g --unsafe-perm node-red</em>
