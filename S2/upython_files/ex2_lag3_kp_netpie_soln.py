@@ -4,11 +4,8 @@ dew.ninja  June 2021
 Exercise 2:
 implement proportional control with lag3 plant
 commanded from netpie
-New commands defined as follows
-kp = xx  : set kp value, ex. kp = 4.5
-feedback = 0/1  : turn feedback mode off/on
-
-can read output from lag3 board or set psim=1 for simulation on ESP32
+can read output from lag3 board
+or set psim=1 for simulation on ESP32
 '''
 
 import machine
@@ -138,7 +135,7 @@ def sub_cb(topic, msg):
 
 #command interpreter function
 def cmdInt(userstr):
-    global r,r_old,plantsim,datasize,capture,capture_flag,kp,feedback
+    global r,r_old,plantsim,datasize,capture,capture_flag,kp, feedback
     result = userstr.find("=")
     if result == -1:
         noparm = 1
@@ -265,10 +262,15 @@ def lag3(a,b,T, u, u_states, y_states):
         y_states[2*k+1] = (1/a)*(-b*y_states[2*k]+T*(u_states[2*k+1]+u_states[2*k]))
     return y_states[5]
 
-# controller function : put your code here
+# controller function
 def controller(r,y, kp):
-    ?
-    ?
+    e = r - y
+    u = kp*e
+    if u > UMID:
+        u = UMID
+    elif u < -UMID:
+        u = -UMID
+    u += UMID
     return u
     
 
