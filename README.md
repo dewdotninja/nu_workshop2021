@@ -244,7 +244,7 @@
 
 #### วีดีโอบันทึกในวันฝึกอบรม
 <ul>
-  <li /><a href="">Session 4 : อาทิตย์ 27 มิย. 1 - 4 PM</a>
+  <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/EeksTngYCgZAp5X7U-i0OK0BS7jzn-pJNTujvREFdalZhw?e=qfY0iZ">Session 4 : อาทิตย์ 27 มิย. 1 - 4 PM</a>
 </ul>
 
 #### วีดีโอเสริม
