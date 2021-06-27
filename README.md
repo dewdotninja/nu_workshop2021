@@ -92,6 +92,11 @@
   <Li />ไฟล์สำหรับ Jupyter notebook ในไดเรคทอรีย่อย /S1/jupyter_nb
 </ul>
 
+#### วีดีโอบันทึกในวันฝึกอบรม
+<ul>
+  <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/EUVLUo9kFzlFiVMP4YLArWMBJ02heZlwL6-SaoAxWPmPPQ?e=nRJqsw">Session 1 : เสาร์ 26 มิย. 10 AM - 12 PM</a>
+</ul>
+
 #### วีดีโอเสริม
 <ul>
   <li /><a href="https://drive.google.com/file/d/1BzIFrVIK4RGhaQvJWaaWSw-3LpqTPXF7">แนะนำ NETPIE 2020</a>
@@ -135,6 +140,11 @@
   <li />โปรแกรมสำหรับ micropython อยู่ในไดเรคทอรี่ย่อย /S2/upython_files 
   <Li />ไฟล์สำหรับ Jupyter notebook ในไดเรคทอรีย่อย /S2/jupyter_nb
   <li />ไฟล์อื่นที่อาจเป็นประโยชน์ อยู่ในไดเรคทอรีย่อย /S2/misc
+</ul>
+
+#### วีดีโอบันทึกในวันฝึกอบรม
+<ul>
+  <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/Ee05dgadg8xAn-mGjDUdgh4BbTOkZKDgT2yvZyiihkNbgg?e=H6TbM1">Session 2 : เสาร์ 26 มิย. 1 - 4 PM</a>
 </ul>
 
 #### วีดีโอเสริม
@@ -186,6 +196,11 @@
   <li />ไฟล์อื่นที่อาจเป็นประโยชน์ อยู่ในไดเรคทอรีย่อย /S3/misc
 </ul>
 
+#### วีดีโอบันทึกในวันฝึกอบรม
+<ul>
+  <li /><a href="">Session 3 : อาทิตย์ 27 มิย. 10 AM - 12 PM</a>
+</ul>
+
 #### วีดีโอเสริม
 <ul>
   <li /><a href="https://youtu.be/ag3m1jUp6A4">ตัวควบคุม PID บน ESP32 และ NETPIE 2020</a>
@@ -225,6 +240,11 @@
 #### สไลด์
 <ul>
   <li /><a href="/S4/lag3_pid_nodered.pdf">การสร้างส่วนควบคุมและแสดงผลบน node-red</a>
+</ul>
+
+#### วีดีโอบันทึกในวันฝึกอบรม
+<ul>
+  <li /><a href="">Session 4 : อาทิตย์ 27 มิย. 1 - 4 PM</a>
 </ul>
 
 #### วีดีโอเสริม
