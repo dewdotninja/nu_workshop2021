@@ -198,7 +198,7 @@
 
 #### วีดีโอบันทึกในวันฝึกอบรม
 <ul>
-  <li /><a href="">Session 3 : อาทิตย์ 27 มิย. 10 AM - 12 PM</a>
+  <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/EUVbMtdYs2xInPvRdjpcA90Bk8D048OT7ePkNpspSMXbnw?e=Lh0tUC">Session 3 : อาทิตย์ 27 มิย. 10 AM - 12 PM</a>
 </ul>
 
 #### วีดีโอเสริม
@@ -252,8 +252,8 @@
   <li /><a href="https://youtu.be/opuQ2LKkSds">ใช้งาน node-red ร่วมกับ NETPIE 2020 (ภาค 1)</a>
   <li /><a href="https://youtu.be/XuBZombtvt0">ใช้งาน node-red ร่วมกับ NETPIE 2020 (ภาค 2)</a>
   <li /><a href="https://youtu.be/gT1QCi2lYvE"> แก้ปัญหาลูปไม่เสถียรเมื่อใช้ node-red ควบคุมอุปกรณ์ IoT</a>
-  <li />ตัวควบคุม PID บน ESP32 โดย micropython แสดงผลและควบคุมโดย NETPIE2020 + node-red (part 1) (อัพโหลดในวันสัมมนา)
-  <li />ตัวควบคุม PID บน ESP32 โดย micropython แสดงผลและควบคุมโดย NETPIE2020 + node-red (part 2) (อัพโหลดในวันสัมมนา)
+  <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/EQ7nzxv5dvVOiQBeaIDU-qIBY_kJcIcERQRa0MaMpts2Rw?e=zfd5wu">ตัวควบคุม PID บน ESP32 โดย micropython แสดงผลและควบคุมโดย NETPIE2020 + node-red (part 1)</a>
+  <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/EROPuo7fvqxNpT7aHXN5gR4BgRwzyp3lltofCdbzuG9x-A?e=hQRf7b">ตัวควบคุม PID บน ESP32 โดย micropython แสดงผลและควบคุมโดย NETPIE2020 + node-red (part 2)</a>
 </ul>
 
 
