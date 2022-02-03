@@ -49,7 +49,7 @@
 หมายเหตุ : บางคลิปเป็นภาษาอังกฤษเนื่องจากต้องใช้สอนในโปรแกรมนานาชาติด้วย
 <ul>
   
-  <li /><a href="https://drive.google.com/file/d/1MxZMu_hacfBijNOM_8S-UzH6eEGunv7B/view?usp=sharing" target=_blank>Arduino IDE, ESP core and library installation</a>
+  <li /><a href="https://o365ku-my.sharepoint.com/:v:/g/personal/varodom_t_live_ku_th/ER3ChIK6SBtMpTAWQFxRybgB3dUJ922khskjthJ6D-pk5w?e=cWCHT3" target=_blank>Arduino IDE, ESP core and library installation</a>
   <li /><a href="https://www.youtube.com/watch?v=nnhDAz9Jw0Y&t=574s">EP 1 | การติดตั้งโปรแกรมสำหรับอบรม NETPIE 2020 (วีดีโอจากทีมงาน NETPIE) </a>
   <li /><a href="https://youtu.be/M_PfTcezMCQ">การติดตั้ง Thonny และ micropython สำหรับ ESP32</a>
   <li />
